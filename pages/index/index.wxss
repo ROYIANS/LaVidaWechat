@@ -120,12 +120,14 @@
 
 .scrollable {
   width: 692rpx;
-  height: 550rpx;
+  height: 60vh;
   background-color: #fff;
   color: #101010;
   position: relative;
   top: 480rpx;
   left: 30rpx;
+  overflow-x: hidden;
+  overflow-y: scroll;
   border-radius: 12.5rpx;
   box-shadow: 0 6.25rpx 12.5rpx rgba(0, 0, 0, 0.16);
 }
@@ -137,15 +139,71 @@
   top: 50%;
   left: 50%;
   transform:translateX(-50%) translateY(-50%);
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 .listitem {
   width: 100%;
-  height: 150rpx;
-  background-color: #0084FF;
-  border-radius: 12.5rpx;
-  box-shadow: 0 6.25rpx 12.5rpx rgba(0, 0, 0, 0.16);
   margin: 20rpx 0;
+  display: inline-block;
 }
+
+.listitem:nth-last-child(1) {
+  margin: 20rpx 0 200rpx 0;
+}
+
+.dot {
+  margin: 10rpx 0 0 10rpx;
+  width: 24rpx;
+  height: 24rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 5rpx solid #0084FF ;
+  float: left;
+  vertical-align: top;
+}
+
+.checked .dot {
+  background-color: #0084FF; 
+}
+
+.checked .listitem-title {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.checked .note {
+  opacity: 0.25;
+}
+
+.listcontent {
+  float: left;
+  width: 540rpx;
+  margin: 0 0 0 40rpx;
+  vertical-align: top;
+}
+
+.listcontent .listitem-title {
+  color: #101010;
+  font-size: 34rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.listcontent .note {
+  color: #101010;
+  opacity: 0.5;
+  font-size: 21rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.listnone {
+  color: #101010;
+  opacity: 0.5;
+  font-size: 21rpx;
+  padding-top: 250rpx;
+  text-align: center;
+}
+

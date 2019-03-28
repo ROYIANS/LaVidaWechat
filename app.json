@@ -1,12 +1,22 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/index-2/index-2"
+    "pages/uk/uk"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#0084FF",
     "navigationBarTitleText": "Vidorra",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index"
+      },
+      {
+        "pagePath": "pages/uk/uk"
+      }
+    ]
   }
 }

@@ -1,2 +1,6 @@
 //app.js
-App({})
+App({
+  onShow: function () {
+    wx.hideTabBar()
+  }
+})
