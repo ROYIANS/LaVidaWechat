@@ -18,6 +18,8 @@
     </view>
   </view>
   <view class='middle'>
+
+
     <view class='nav'>
       <view class='item {{_num==1?"active":""}}' bindtap='navClick' data-num='1'>
         <view>Todos</view>
@@ -36,19 +38,81 @@
     <view class='de {{_num==1?"show":""}}'>
       <view class='scrollable'>
         <view class='todolist'>
-          <view class='listitem'></view>
-          <view class='listitem'></view>
-          <view class='listitem'></view>
-          <view class='listitem'></view>
-          <view class='listitem'></view>
-          <view class='listitem'></view>
-          <view class='listitem'></view>
-          <text>\n\n\n</text>
+          <view class='de listnone'>
+            <text>这里什么也没有，快来添加一个吧！</text>
+          </view>
+          <view class='listitem'>
+            <view class='dot'></view>
+            <view class='listcontent'>
+              <view class='listitem-title'>给 Anna 打电话</view>
+              <view class='note'>这里写一些备注，你说好不好呀哈哈哈哈哈哈哈</view>
+            </view>
+          </view>
+
+          <view class='listitem'>
+            <view class='dot'></view>
+            <view class='listcontent'>
+              <view class='listitem-title'>给 Anna 打电话</view>
+              <view class='note'>这里写一些备注，你说好不好呀哈哈哈哈哈哈哈</view>
+            </view>
+          </view>
+
+          <view class='listitem'>
+            <view class='dot'></view>
+            <view class='listcontent'>
+              <view class='listitem-title'>给 Anna 打电话</view>
+              <view class='note'>这里写一些备注，你说好不好呀哈哈哈哈哈哈哈</view>
+            </view>
+          </view>
+
+          <view class='listitem checked'>
+            <view class='dot'></view>
+            <view class='listcontent'>
+              <view class='listitem-title'>给 Anna 打电话</view>
+              <view class='note'>这里写一些备注，你说好不好呀哈哈哈哈哈哈哈</view>
+            </view>
+          </view>
+
+          <view class='listitem'>
+            <view class='dot'></view>
+            <view class='listcontent'>
+              <view class='listitem-title'>给 Anna 打电话给 Anna 打电话给 Anna 打电话给 Anna 打电话给 Anna 打电话给 Anna 打电话给 Anna 打电话</view>
+              <view class='note'>这里写一些备写一些备写一些备写一些备写一些备写一些备写一些备写一些备注，你说好不好呀哈哈哈哈哈哈哈</view>
+            </view>
+          </view>
+
+          <view class='listitem'>
+            <view class='dot'></view>
+            <view class='listcontent'>
+              <view class='listitem-title'>给 Anna 打电话</view>
+              <view class='note'>这里写一些备注，你说好不好呀哈哈哈哈哈哈哈</view>
+            </view>
+          </view>
         </view>
         
       </view>
     </view>
     <view class='de {{_num==2?"show":""}}'>2</view>
     <view class='de {{_num==3?"show":""}}'>3</view>
+  </view>
+
+  <view class='footer'>
+  
+    <view class='bar'>
+      <view class='menu'>1</view>
+      <view class='menu' bindtap='tiao2'>2</view>
+      <view class='menu'>3</view>
+      <view class='menu'>4</view>
+      <view class='menu'>5</view>
+    </view>
+
+    <view class='circle circle-back'></view>
+    <view class='circle circle-front'></view>
+    <view class='plus-button' hover-class='plus-button-hover'>
+      <text>+</text>
+    </view>
+
+    
+
   </view>
 </view>

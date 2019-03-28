@@ -1,0 +1,209 @@
+
+.head-card {
+  width: 692rpx;
+  height: 392rpx;
+  background-image: url(https://i.loli.net/2019/03/28/5c9c3c19c339a.jpg);
+  background-repeat:no-repeat;
+  background-size:100%;
+  position: relative;
+  top: -287.5rpx;
+  left: 4%;
+  border-radius: 12.5rpx;
+  box-shadow: 0 6.25rpx 12.5rpx rgba(0, 0, 0, 0.16);
+}
+
+.cover {
+  height:100%;
+  background-color:#0084FF;
+  filter:Alpha(Opacity=45);
+  opacity:0.45;
+  border-radius: 12.5rpx;
+}
+
+.head-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 75%;
+  transform:translateX(-50%) translateY(-50%);
+  color: #fff;
+  font-size: 25rpx;
+  text-shadow: 0 6.25rpx 12.5rpx rgba(0, 0, 0, 0.16);
+}
+
+.head-text .center {
+  font-size: 73rpx;
+  float: left;
+  width: 100%;
+  text-align: center;
+  line-height: 160rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.head-text .left {
+  float: left;
+  width: 100%;
+}
+
+.head-text .right {
+  float: right;
+}
+
+.head-text .right image{
+  height: 27rpx;
+  width: 27rpx;
+}
+
+.head-text .right text{
+  padding: 0 10rpx;
+}
+
+.middle {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  position: relative;
+  top: 450rpx;
+  left: 50rpx;
+}
+
+.item {
+  position: relative;
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #929292;
+  padding: 0 0 0 20rpx;
+  margin-left: 40rpx;
+  display: inline-block;
+}
+
+.item .bar {
+  width: 90rpx;
+  height: 26rpx;
+  background-color: #0084FF;
+  border-radius: 12.5rpx;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  vertical-align: bottom;
+}
+
+.nav .active {
+  font-size: 42rpx;
+  color: #101010;
+}
+
+.nav .active .bar {
+  width: 50%;
+  height: 31.5rpx;
+  opacity: 1;
+}
+
+.nav .item:nth-child(1) {
+  margin-left: 0;
+}
+
+.de {
+  display: none;
+}
+
+.show {
+  display: inline;
+}
+
+.scrollable {
+  width: 692rpx;
+  height: 60vh;
+  background-color: #fff;
+  color: #101010;
+  position: relative;
+  top: 480rpx;
+  left: 30rpx;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border-radius: 12.5rpx;
+  box-shadow: 0 6.25rpx 12.5rpx rgba(0, 0, 0, 0.16);
+}
+
+.todolist {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translateX(-50%) translateY(-50%);
+}
+
+.listitem {
+  width: 100%;
+  margin: 20rpx 0;
+  display: inline-block;
+}
+
+.listitem:nth-last-child(1) {
+  margin: 20rpx 0 200rpx 0;
+}
+
+.dot {
+  margin: 10rpx 0 0 10rpx;
+  width: 24rpx;
+  height: 24rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 5rpx solid #0084FF ;
+  float: left;
+  vertical-align: top;
+}
+
+.checked .dot {
+  background-color: #0084FF; 
+}
+
+.checked .listitem-title {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.checked .note {
+  opacity: 0.25;
+}
+
+.listcontent {
+  float: left;
+  width: 540rpx;
+  margin: 0 0 0 40rpx;
+  vertical-align: top;
+}
+
+.listcontent .listitem-title {
+  color: #101010;
+  font-size: 34rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.listcontent .note {
+  color: #101010;
+  opacity: 0.5;
+  font-size: 21rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.listnone {
+  color: #101010;
+  opacity: 0.5;
+  font-size: 21rpx;
+  padding-top: 250rpx;
+  text-align: center;
+}
+

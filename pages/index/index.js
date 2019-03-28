@@ -7,4 +7,11 @@ Page({
       _num: e.currentTarget.dataset.num
     })
   },
+  tiao2: function() {
+    wx.switchTab({
+      url: '../uk/uk'
+    })
+  }
+
+
 })
