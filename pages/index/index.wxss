@@ -121,11 +121,31 @@
 .scrollable {
   width: 692rpx;
   height: 550rpx;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #101010;
   position: relative;
   top: 480rpx;
   left: 30rpx;
+  border-radius: 12.5rpx;
+  box-shadow: 0 6.25rpx 12.5rpx rgba(0, 0, 0, 0.16);
+}
+
+.todolist {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translateX(-50%) translateY(-50%);
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+.listitem {
+  width: 100%;
+  height: 150rpx;
+  background-color: #0084FF;
+  border-radius: 12.5rpx;
+  box-shadow: 0 6.25rpx 12.5rpx rgba(0, 0, 0, 0.16);
+  margin: 20rpx 0;
 }
