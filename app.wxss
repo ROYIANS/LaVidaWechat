@@ -1,10 +1,33 @@
 /**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+.body {
+  height:100vh;
+  width: 100%;
+  background-color: #F8F9FE;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  font-family: 'San Francisco','PingFangSC-Regular','PingFang SC Regular', Roboto, 'Droid Sans', sans-serif;
+}
+
+.head {
+  height: 312.5rpx;
+  width: 100%;
+  background-color: #0084FF;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.head::after {
+  content: '';
+  width: 140%;
+  height: 312.5rpx;
+  position: absolute;
+  left: -20%;
+  top: 85%;
+  z-index: -1;
+  border-radius: 100% 100% 0 0;
+  background: #F8F9FE;
+}

@@ -1,13 +1,54 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<!-- 1 rpx = 0.48 px-->
+<view class='body'>
+  <view class='head'></view>
+  <view class='head-card'>
+    <view class='cover'></view>
+    <view class='head-text'>
+      <view class='left'>
+        <text>NEXT IN </text>
+        <text id='time'>12:00</text>
+      </view>
+      <view class='center'>需求工程</view>
+      <view class='right'>
+        <image src='/statics/img/position-fill.svg'></image>
+        <text>行远楼 A206</text>
+        <image src='/statics/img/teacher.svg'></image>
+        <text>杨丽凤</text>
+      </view>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class='middle'>
+    <view class='nav'>
+      <view class='item {{_num==1?"active":""}}' bindtap='navClick' data-num='1'>
+        <view>Todos</view>
+        <view class='bar'></view>
+      </view>
+      <view class='item {{_num==2?"active":""}}' bindtap='navClick' data-num='2'>
+        <view>Schedule</view>
+        <view class='bar'></view>
+      </view>
+      <view class='item {{_num==3?"active":""}}' bindtap='navClick' data-num='3'>
+        <view>Archieve</view>
+        <view class='bar'></view>
+      </view>
+    </view>
+
+    <view class='de {{_num==1?"show":""}}'>
+      <view class='scrollable'>
+        <view class='todolist'>
+          <view class='listitem'></view>
+          <view class='listitem'></view>
+          <view class='listitem'></view>
+          <view class='listitem'></view>
+          <view class='listitem'></view>
+          <view class='listitem'></view>
+          <view class='listitem'></view>
+          <text>\n\n\n</text>
+        </view>
+        
+      </view>
+    </view>
+    <view class='de {{_num==2?"show":""}}'>2</view>
+    <view class='de {{_num==3?"show":""}}'>3</view>
   </view>
 </view>
